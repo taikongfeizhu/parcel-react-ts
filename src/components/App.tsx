@@ -15,7 +15,6 @@ export default class App extends React.PureComponent<{}, AppState> {
     this.state = this.initialState;
     this._handleToggle = this._handleToggle.bind(this);
     this._handleReset = this._handleReset.bind(this);
-    console.log('test1232')
   }
 
   public render(): JSX.Element {
