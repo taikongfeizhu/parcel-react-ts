@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html -p 3000",
+    "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url '/'",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -38,14 +38,24 @@
   "author": "Ahn Dohyung",
   "license": "MIT",
   "dependencies": {
+    "@ngfk/ts-redux": "^1.4.2",
     "@types/react": "^16.0.29",
     "@types/react-dom": "^16.0.3",
+    "classnames": "^2.2.5",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "todomvc-app-css": "^2.1.0"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.1.5",
+    "@types/classnames": "^2.2.2",
     "@types/jest": "^21.1.8",
+    "@types/node": "^8.0.24",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.3",
+    "@types/react-redux": "^5.0.4",
+    "@types/enzyme": "^3.1.5",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "jest": "^21.2.1",
