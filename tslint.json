@@ -5,6 +5,11 @@
   "globals": {
     "process": false
   },
+  "exclude":[
+    "node_modules",
+    "**/__test*", //exclude all that *__test*
+    "**/*.spec.ts" // exclude all that contain "spec.ts" in name
+  ],
   "rules": {
     "variable-name": false,
     "function-name": false,

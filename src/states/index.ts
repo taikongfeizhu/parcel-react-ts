@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-
 import { State } from '../models/state';
 import { filterReducer } from './filter.reducer';
 import { todosReducer } from './todos.reducer';

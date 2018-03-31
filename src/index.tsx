@@ -1,26 +1,24 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from '@ngfk/ts-redux';
-import { ActionMap } from './actions';
-import { App } from './containers/App';
-import { State } from './models/state';
-import { registerServiceWorker } from './registerServiceWorker';
-import { reducer } from './states';
+import {Provider} from 'react-redux';
+import {createStore} from '@ngfk/ts-redux';
+import {ActionMap} from './actions';
+import {App} from './containers/App';
+import {State} from './models/state';
+import {reducer} from './states';
 
 import 'todomvc-app-css/index.css';
 import './index.css'
 
 export const store = createStore<State, ActionMap>(
-    reducer,
-    undefined as any,
-    (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+  reducer,
+  undefined as any,
+  (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root') as HTMLElement
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.getElementById('root') as HTMLElement
 );
-registerServiceWorker();

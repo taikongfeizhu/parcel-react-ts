@@ -1,5 +1,4 @@
 import { createReducer } from '@ngfk/ts-redux';
-
 import { FilterActionMap } from '../actions/filter.actions';
 import { Filter } from '../models/filter';
 
