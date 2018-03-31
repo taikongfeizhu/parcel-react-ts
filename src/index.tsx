@@ -1,8 +1,7 @@
-import { createStore } from '@ngfk/ts-redux';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-
+import { createStore } from '@ngfk/ts-redux';
 import { ActionMap } from './actions';
 import { App } from './containers/App';
 import { State } from './models/state';
